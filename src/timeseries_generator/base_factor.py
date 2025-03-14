@@ -79,7 +79,7 @@ class BaseFactor(ABC):
             end_date: optional end date.
 
         Returns:
-            :obj:`DateTimeIndex` compatable with this module.
+            :obj:`DateTimeIndex` compatible with this module.
         """
         periods: Optional[int] = None
         if not isinstance(start_date, Timestamp):
