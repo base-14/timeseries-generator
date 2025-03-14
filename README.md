@@ -1,6 +1,13 @@
 # timeseries-generator
 This repository consists of a python packages that generates synthetic time series dataset in a generic way (under `/timeseries_generator`) and demo notebooks on how to generate synthetic timeseries data (under `/examples`). The goal here is to have non-sensitive data available to demo solutions and test the effectiveness of those solutions and/or algorithms. In order to test your algorithm, you want to have time series available containing different kinds of trends. The python package should help create different kinds of time series while still being maintainable.
 
+## Notes on this fork
+
+1. This moves the build to `uv`. You can read up on uv here https://astral.sh/blog/uv
+2. Dependencies are updated to the latest versions.
+3. Unit tests are working.
+4. The updates of this package are still work in progress.
+
 ## `timeseries_generator` package
 For this package, it is assumed that a time series is composed of a base value multiplied by many factors.
 ```
@@ -36,6 +43,8 @@ This formula describes the concepts we talk above
 ```sh
 pip install timeseries-generator
 ```
+Note this installs the original version of the package and not this fork.
+Publlish of this fork is work in progress.
 
 ## Usage
 ``` python

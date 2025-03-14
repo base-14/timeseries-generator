@@ -10,11 +10,10 @@ clean:
 		@echo "$(CC_GREEN)cleaning build artifacts$(CC_NC)"
 		rm -rf timeseries_generator.egg-info
 		rm -rf dist
-		rm -rf build
 
 build: clean
 		@echo "$(CC_GREEN)building python package$(CC_NC)"
-		python -m build
+		uv build
 
 test:
-		pytest tests
+		uv run pytest tests
