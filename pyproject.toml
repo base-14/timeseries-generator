@@ -22,3 +22,7 @@ dependencies = [
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[project.urls]
+Homepage = "https://github.com/base-14/timeseries-generator"
+Issues = "https://github.com/base-14/timeseries-generator/issues"
